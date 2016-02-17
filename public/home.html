@@ -1,0 +1,14 @@
+<h1>Welcome to my Home Page</h1>
+<hr/>
+<!--<a ui-sref="#/page2"> page 2</a>-->
+{{test}}
+<hr/>
+<ul>
+    <li ng-repeat="word in words track by $index">{{word.one}}<a ng-click="remove($index)">- x</a><hr/></li>
+</ul>
+<hr/>
+<!--<button ui-sref="#/nothome">Go To Not Home</button>-->
+<button ui-sref="nothome">Go To Not Home </button>
+<input type="text" ng-model="newitem"/>
+<button ng-click="push()">Add</button>
+<button ng-click="talkToServer()">Server</button>
